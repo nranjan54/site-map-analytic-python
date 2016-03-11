@@ -4,8 +4,8 @@ from spider import Spider
 from domain import *
 from general import *
 
-PROJECT_NAME = 'thenewboston'
-HOMEPAGE = 'https://thenewboston.com/'
+PROJECT_NAME = 'rubyblog-niraj'
+HOMEPAGE = 'https://rubyblog-niraj.herokuapp.com/'
 DOMAIN_NAME = getDomainName(HOMEPAGE)
 QUEUE_FILE = PROJECT_NAME + '/queue.txt'
 CRAWLED_FILE = PROJECT_NAME + '/crawled.txt'

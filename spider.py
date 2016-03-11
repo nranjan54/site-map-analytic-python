@@ -46,8 +46,8 @@ class Spider:
 		try:
 			response = urlopen(pageUrl)
 			# for getheader() returning other than 'text/html'
-			#if response.getheader('Content-Type') == 'text/html; charset=utf-8':
-			if response.getheader('Content-Type') == 'text/html':
+			if response.getheader('Content-Type') == 'text/html; charset=utf-8':
+			#if response.getheader('Content-Type') == 'text/html':
 				htmlBytes = response.read()
 				htmlString = htmlBytes.decode("utf-8")
 			finder = LinkFinder(Spider.baseUrl, pageUrl)
